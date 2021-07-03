@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 
 extension UIView {
-    func roundCorners(corners: UIRectCorner, radius: CGFloat) {
+    public func roundCorners(corners: UIRectCorner, radius: CGFloat) {
         if #available(iOS 11.0, *) {
             clipsToBounds = false
             layer.cornerRadius = radius
